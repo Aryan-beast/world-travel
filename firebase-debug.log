@@ -1,0 +1,88 @@
+[debug] [2022-07-31T20:38:53.868Z] ----------------------------------------------------------------------
+[debug] [2022-07-31T20:38:53.870Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sansk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-31T20:38:53.870Z] CLI Version:   11.4.0
+[debug] [2022-07-31T20:38:53.870Z] Platform:      win32
+[debug] [2022-07-31T20:38:53.870Z] Node Version:  v16.14.0
+[debug] [2022-07-31T20:38:53.871Z] Time:          Mon Aug 01 2022 02:08:53 GMT+0530 (India Standard Time)
+[debug] [2022-07-31T20:38:53.872Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-31T20:38:53.936Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-31T20:38:53.936Z] > authorizing via signed-in user (sanskargoel1234@gmail.com)
+[debug] [2022-07-31T20:38:53.937Z] [iam] checking project hostprojectdemo-b9840 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-31T20:38:53.939Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions [none]
+[debug] [2022-07-31T20:38:53.939Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions x-goog-quota-user=projects/hostprojectdemo-b9840
+[debug] [2022-07-31T20:38:53.939Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-31T20:38:55.937Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions 200
+[debug] [2022-07-31T20:38:55.937Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-31T20:38:55.938Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 [none]
+[debug] [2022-07-31T20:38:56.564Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 200
+[debug] [2022-07-31T20:38:56.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 {"projectId":"hostprojectdemo-b9840","projectNumber":"124628743920","displayName":"HostProjectDemo","name":"projects/hostprojectdemo-b9840","resources":{"hostingSite":"hostprojectdemo-b9840"},"state":"ACTIVE","etag":"1_5233b4bb-0626-487d-a397-1468c32bc97b"}
+[info] 
+[info] === Deploying to 'hostprojectdemo-b9840'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-31T20:38:56.571Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 [none]
+[debug] [2022-07-31T20:38:57.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 200
+[debug] [2022-07-31T20:38:57.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 {"projectId":"hostprojectdemo-b9840","projectNumber":"124628743920","displayName":"HostProjectDemo","name":"projects/hostprojectdemo-b9840","resources":{"hostingSite":"hostprojectdemo-b9840"},"state":"ACTIVE","etag":"1_5233b4bb-0626-487d-a397-1468c32bc97b"}
+[debug] [2022-07-31T20:38:57.374Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions [none]
+[debug] [2022-07-31T20:38:57.375Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-31T20:38:59.746Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions 500
+[debug] [2022-07-31T20:38:59.746Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-31T20:39:00.105Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-07-31T20:39:11.255Z] ----------------------------------------------------------------------
+[debug] [2022-07-31T20:39:11.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sansk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-31T20:39:11.257Z] CLI Version:   11.4.0
+[debug] [2022-07-31T20:39:11.257Z] Platform:      win32
+[debug] [2022-07-31T20:39:11.257Z] Node Version:  v16.14.0
+[debug] [2022-07-31T20:39:11.258Z] Time:          Mon Aug 01 2022 02:09:11 GMT+0530 (India Standard Time)
+[debug] [2022-07-31T20:39:11.259Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-31T20:39:11.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-31T20:39:11.317Z] > authorizing via signed-in user (sanskargoel1234@gmail.com)
+[debug] [2022-07-31T20:39:11.317Z] [iam] checking project hostprojectdemo-b9840 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-31T20:39:11.319Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions [none]
+[debug] [2022-07-31T20:39:11.320Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions x-goog-quota-user=projects/hostprojectdemo-b9840
+[debug] [2022-07-31T20:39:11.320Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-31T20:39:13.036Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions 200
+[debug] [2022-07-31T20:39:13.036Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hostprojectdemo-b9840:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-31T20:39:13.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 [none]
+[debug] [2022-07-31T20:39:13.857Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 200
+[debug] [2022-07-31T20:39:13.857Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 {"projectId":"hostprojectdemo-b9840","projectNumber":"124628743920","displayName":"HostProjectDemo","name":"projects/hostprojectdemo-b9840","resources":{"hostingSite":"hostprojectdemo-b9840"},"state":"ACTIVE","etag":"1_5233b4bb-0626-487d-a397-1468c32bc97b"}
+[info] 
+[info] === Deploying to 'hostprojectdemo-b9840'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-31T20:39:13.864Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 [none]
+[debug] [2022-07-31T20:39:14.796Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 200
+[debug] [2022-07-31T20:39:14.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hostprojectdemo-b9840 {"projectId":"hostprojectdemo-b9840","projectNumber":"124628743920","displayName":"HostProjectDemo","name":"projects/hostprojectdemo-b9840","resources":{"hostingSite":"hostprojectdemo-b9840"},"state":"ACTIVE","etag":"1_5233b4bb-0626-487d-a397-1468c32bc97b"}
+[debug] [2022-07-31T20:39:14.798Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions [none]
+[debug] [2022-07-31T20:39:14.798Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-31T20:39:17.023Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions 500
+[debug] [2022-07-31T20:39:17.023Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/124628743920/sites/hostprojectdemo-b9840/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-31T20:39:17.412Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
